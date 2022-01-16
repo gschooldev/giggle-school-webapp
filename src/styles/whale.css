@@ -1,0 +1,41 @@
+#whale-wrapper {
+  position: absolute;
+  margin-top: 7%;
+  
+  animation-name: whale-slide-right;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#whale {
+  width: 50vw;
+
+  animation-name: whale-bounce-up-down;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes whale-bounce-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes whale-slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(40vw);
+  }
+}

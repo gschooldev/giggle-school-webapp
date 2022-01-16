@@ -1,0 +1,197 @@
+/* GREEN FISH */
+#green-fish-wrapper {
+  position: absolute;
+  margin-top: 3%;
+  transform: translateX(-100%);
+
+  animation-name: green-fish-slide-right;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+#green-fish {
+  width: 7vw;
+  
+  animation-name: fish-bounce-up-down;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes green-fish-slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(50vw);
+  }
+}
+
+/* ORANGE FISH */
+#orange-fish-wrapper {
+  position: absolute;
+  margin-top: 4%;
+  transform: translateX(-100%);
+
+  animation-name: orange-fish-slide-right;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+#orange-fish {
+  width: 10vw;
+  
+  animation-name: fish-bounce-up-down;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes orange-fish-slide-right {
+  0% {
+    transform: translateX(calc(-100% - 15vw ));
+  }
+  100% {
+    transform: translateX(35vw);
+  }
+}
+
+/* BLUE FISH */
+#blue-fish-wrapper {
+  position: absolute;
+  margin-top: 20%;
+  transform: translateX(-100%);
+
+  animation-name: blue-fish-slide-right;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+#blue-fish {
+  width: 9.5vw;
+  
+  animation-name: fish-bounce-up-down;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blue-fish-slide-right {
+  0% {
+    transform: translateX(calc(-100% - 15vw));
+  }
+  100% {
+    transform: translateX(35vw);
+  }
+}
+
+/* RED FISH */
+#red-fish-wrapper {
+  position: absolute;
+  margin-top: 13%;
+  transform: translateX(-100%);
+
+  animation-name: red-fish-slide-right;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+#red-fish {
+  width: 8vw;
+  
+  animation-name: fish-bounce-up-down;
+  animation-timing-function: linear;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes red-fish-slide-right {
+  0% {
+    transform: translateX(calc(-100% - 25vw));
+  }
+  100% {
+    transform: translateX(25vw);
+  }
+}
+
+/* YELLOW FISH */
+#yellow-fish-wrapper {
+  position: absolute;
+  margin-top: 5%;
+  transform: translateX(-100%);
+
+  animation-name: yellow-fish-slide-right;
+  animation-timing-function: linear;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: forwards; */
+  animation-delay: 5s;
+}
+#yellow-fish {
+  width: 8vw;
+  
+  animation-name: fish-bounce-up-down;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes yellow-fish-slide-right {
+  0% {
+    transform: translateX(calc(-100% - 35vw));
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+/* PINK FISH */
+#pink-fish-wrapper {
+  position: absolute;
+  margin-top: 10%;
+  transform: translateX(-100%);
+
+  animation-name: pink-fish-slide-right;
+  animation-timing-function: linear;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+#pink-fish {
+  width: 14vw;
+  
+  animation-name: fish-bounce-up-down;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pink-fish-slide-right {
+  0% {
+    transform: translateX(calc(-100% - 36vw));
+  }
+  100% {
+    transform: translateX(2vw);
+  }
+}
+
+@keyframes fish-bounce-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
