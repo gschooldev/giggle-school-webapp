@@ -1,0 +1,69 @@
+.mermaid-wrapper {
+  position: absolute;
+  transform: translateY(45vw);
+  z-index: -2;
+
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 13s;
+}
+
+.mermaid {
+  animation-name: mermaid-bounce-left-to-right;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 14s;
+}
+
+#mermaid-wrapper {
+  left: 19vw;
+  animation-name: mermaid-slide-up;
+}
+
+#mermaid {
+  width: 13vw;
+}
+
+#baby-wrapper {
+  left: 27.5vw;
+  animation-name: baby-slide-up;
+}
+
+#baby {
+  width: 5.5vw;
+}
+
+@keyframes mermaid-bounce-left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+    
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes mermaid-slide-up {
+  0% {
+    transform: translateY(45vw);
+  }
+  100% {
+  transform: translateY(20vw);
+  }
+}
+
+@keyframes baby-slide-up {
+  0% {
+    transform: translateY(45vw);
+  }
+  100% {
+    transform: translateY(21vw);
+  }
+}

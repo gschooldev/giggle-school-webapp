@@ -1,0 +1,67 @@
+.music-note-wrapper {
+  animation-name: music-note-bounce-up-down;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  position: absolute;
+  right: 9vw;
+  top: 4vw;
+}
+
+#clef-note {
+  width: 3vw;
+  opacity: 0;
+  animation: music-note-opacity 1s 5s ease-in-out forwards;
+}
+
+#single-note {
+  position: absolute;
+  width: 3vw;
+  top: 0vw;
+  left: 3vw;
+  opacity: 0;
+
+  animation: music-note-opacity 1s 6s ease-in-out forwards;
+}
+
+#many-notes {
+  position: absolute;
+  width: 5vw;
+  top: 2vw;
+  left: 3vw;
+  opacity: 0;
+  animation: music-note-opacity 1s 7s ease-in-out forwards;
+}
+
+@keyframes music-note-bounce-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes music-note-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 
+
+@keyframes muusic-note-slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(40vw);
+  }
+} */

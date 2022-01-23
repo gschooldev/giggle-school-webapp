@@ -1,23 +1,29 @@
-/* GREEN FISH */
-#green-fish-wrapper {
+/* ANCHOR: FISH CLASS */
+.fish-wrapper {
   position: absolute;
-  margin-top: 3%;
   transform: translateX(-100%);
 
-  animation-name: green-fish-slide-right;
   animation-timing-function: linear;
-  animation-duration: 10s;
+  animation-duration: 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 5s;
+  animation-delay: 2s;
+}
+
+.fish {
+  animation-name: fish-bounce-up-down;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+/* ANCHOR: GREEN FISH */
+#green-fish-wrapper {
+  margin-top: 3%;
+  animation-name: green-fish-slide-right;
 }
 #green-fish {
   width: 7vw;
-  
-  animation-name: fish-bounce-up-down;
-  animation-timing-function: linear;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes green-fish-slide-right {
@@ -29,57 +35,33 @@
   }
 }
 
-/* ORANGE FISH */
+/* ANCHOR: ORANGE FISH */
 #orange-fish-wrapper {
-  position: absolute;
   margin-top: 4%;
-  transform: translateX(-100%);
-
   animation-name: orange-fish-slide-right;
-  animation-timing-function: linear;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
 }
 #orange-fish {
   width: 10vw;
-  
-  animation-name: fish-bounce-up-down;
-  animation-timing-function: linear;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-duration: 1.2s;
 }
 
 @keyframes orange-fish-slide-right {
   0% {
-    transform: translateX(calc(-100% - 15vw ));
+    transform: translateX(calc(-100% - 15vw));
   }
   100% {
     transform: translateX(35vw);
   }
 }
 
-/* BLUE FISH */
+/* ANCHOR: BLUE FISH */
 #blue-fish-wrapper {
-  position: absolute;
   margin-top: 20%;
-  transform: translateX(-100%);
 
   animation-name: blue-fish-slide-right;
-  animation-timing-function: linear;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
 }
 #blue-fish {
   width: 9.5vw;
-  
-  animation-name: fish-bounce-up-down;
-  animation-timing-function: linear;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes blue-fish-slide-right {
@@ -91,26 +73,14 @@
   }
 }
 
-/* RED FISH */
+/* ANCHOR: RED FISH */
 #red-fish-wrapper {
-  position: absolute;
   margin-top: 13%;
-  transform: translateX(-100%);
-
   animation-name: red-fish-slide-right;
-  animation-timing-function: linear;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
 }
 #red-fish {
   width: 8vw;
-  
-  animation-name: fish-bounce-up-down;
-  animation-timing-function: linear;
   animation-duration: 1.4s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes red-fish-slide-right {
@@ -122,57 +92,14 @@
   }
 }
 
-/* YELLOW FISH */
-#yellow-fish-wrapper {
-  position: absolute;
-  margin-top: 5%;
-  transform: translateX(-100%);
-
-  animation-name: yellow-fish-slide-right;
-  animation-timing-function: linear;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  /* animation-fill-mode: forwards; */
-  animation-delay: 5s;
-}
-#yellow-fish {
-  width: 8vw;
-  
-  animation-name: fish-bounce-up-down;
-  animation-timing-function: linear;
-  animation-duration: 1.2s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes yellow-fish-slide-right {
-  0% {
-    transform: translateX(calc(-100% - 35vw));
-  }
-  100% {
-    transform: translateX(100vw);
-  }
-}
-
-/* PINK FISH */
+/* ANCHOR PINK FISH */
 #pink-fish-wrapper {
-  position: absolute;
   margin-top: 10%;
-  transform: translateX(-100%);
 
   animation-name: pink-fish-slide-right;
-  animation-timing-function: linear;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
 }
 #pink-fish {
   width: 14vw;
-  
-  animation-name: fish-bounce-up-down;
-  animation-timing-function: linear;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes pink-fish-slide-right {
@@ -184,6 +111,51 @@
   }
 }
 
+/* ANCHOR: YELLOW FISH */
+#yellow-fish-wrapper {
+  /* animation name | length of animation | delay | type of animation | repetition */
+  animation: yellow-fish-slide-right 4s 2s linear forwards,
+    yellow-fish-slide-bottom-right 6s 7s linear forwards,
+    yellow-fish-slide-right-and-then-bottom-right 15s 13s linear infinite;
+}
+#yellow-fish {
+  width: 8vw;
+}
+
+@keyframes yellow-fish-slide-right {
+  0% {
+    transform: translate(calc(-100% - 35vw), 5%);
+  }
+  100% {
+    transform: translate(18vw, 3vw);
+  }
+}
+
+@keyframes yellow-fish-slide-bottom-right {
+  0% {
+    transform: translate(18vw, 3vw);
+  }
+  100% {
+    transform: translate(100vw, 50vw);
+  }
+}
+
+@keyframes yellow-fish-slide-right-and-then-bottom-right {
+  0% {
+    transform: translate(calc(-100% - 35vw), 5%);
+  }
+  25% {
+    transform: translate(18vw, 3vw);
+  }
+  60% {
+    transform: translate(18vw, 3vw);
+  }
+  100% {
+    transform: translate(100vw, 50vw);
+  } 
+}
+
+/* ANCHOR: FISH BOUNCE UP AND DOWN */
 @keyframes fish-bounce-up-down {
   0% {
     transform: translateY(0);

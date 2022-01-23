@@ -1,0 +1,128 @@
+.prawn-wrapper {
+  position: absolute;
+  transform: translateY(40vw);
+  z-index: -1;  
+}
+
+.prawn {
+  width: 5vw;
+
+  animation-name: rotate-dancing;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#prawn-1-wrapper {
+  animation: prawn-1-slide-up 1s 15s linear 1, prawn-1-slide-left 6s 16s linear 1,
+    prawn-1-slide-left-forever 7s 22s linear infinite;
+}
+
+@keyframes prawn-1-slide-up {
+  0% {
+    transform: translate(80vw, 35vw);
+  }
+  100% {
+    transform: translate(70vw, 30vw);
+  }
+}
+
+@keyframes prawn-1-slide-left {
+  0% {
+    transform: translate(70vw, 30vw);
+  }
+  100% {
+    transform: translate(calc(-100% - 8vw), 30vw);
+  }
+}
+
+@keyframes prawn-1-slide-left-forever {
+  0% {
+    transform: translate(calc(100vw), 30vw);
+  }
+  100% {
+    transform: translate(calc(-100% - 8vw), 30vw);
+  }
+}
+
+#prawn-2-wrapper {
+  animation: prawn-2-slide-up 1s 15s linear 1, prawn-2-slide-left 6s 16s linear 1,
+    prawn-2-slide-left-forever 7s 22s linear infinite;
+}
+
+@keyframes prawn-2-slide-up {
+  0% {
+    transform: translate(80vw, 35vw);
+  }
+  100% {
+    transform: translate(74vw, 30vw);
+  }
+}
+
+@keyframes prawn-2-slide-left {
+  0% {
+    transform: translate(74vw, 30vw);
+  }
+  100% {
+    transform: translate(calc(-100% - 4vw), 30vw);
+  }
+}
+
+@keyframes prawn-2-slide-left-forever {
+  0% {
+    transform: translate(calc(100vw + 4vw), 30vw);
+  }
+  100% {
+    transform: translate(calc(-100% - 4vw), 30vw);
+  }
+}
+
+#prawn-3-wrapper {
+  animation: prawn-3-slide-up 1s 15s linear 1, prawn-3-slide-left 6s 16s linear 1,
+    prawn-3-slide-left-forever 7s 22s linear infinite;
+}
+
+@keyframes prawn-3-slide-up {
+  0% {
+    transform: translate(80vw, 35vw);
+  }
+  100% {
+    transform: translate(78vw, 30vw);
+  }
+}
+
+@keyframes prawn-3-slide-left {
+  0% {
+    transform: translate(78vw, 30vw);
+  }
+  100% {
+    transform: translate(calc(-100%), 30vw);
+  }
+}
+
+@keyframes prawn-3-slide-left-forever {
+  0% {
+    transform: translate(calc(100vw + 8vw), 30vw);
+  }
+  100% {
+    transform: translate(calc(-100%), 30vw);
+  }
+}
+
+@keyframes rotate-dancing {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}

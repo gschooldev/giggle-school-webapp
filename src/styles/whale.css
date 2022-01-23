@@ -1,10 +1,11 @@
 #whale-wrapper {
   position: absolute;
   margin-top: 7%;
+  /* transform: translateX(40vw); */
   
   animation-name: whale-slide-right;
   animation-timing-function: linear;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -14,7 +15,7 @@
 
   animation-name: whale-bounce-up-down;
   animation-timing-function: linear;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 

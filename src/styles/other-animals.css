@@ -1,0 +1,89 @@
+#crayfish-wrapper {
+  position: absolute;
+  width: 7vw;
+  left: 60vw;
+  z-index: -1;
+  transform: translateY(50vw);
+
+  animation-name: crayfish-slide-up;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 20s;
+}
+
+#crayfish {
+  animation: crayfish-side-to-side 1s linear infinite;
+}
+
+@keyframes crayfish-slide-up {
+  0% {
+    transform: translateY(50vw);
+  }
+  100% {
+    transform: translateY(42.5vw);
+  }
+}
+
+@keyframes crayfish-side-to-side {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#crab-wrapper {
+  position: absolute;
+  bottom: 5vw;
+  z-index: -1;
+  transform: translateX(100vw);
+
+  animation-name: crab-slide-to-left;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 20s;
+}
+
+#crab {
+  width: 12vw;
+
+  animation-name: crab-slide-left-right;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes crab-slide-to-left {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(85vw);
+  }
+}
+
+@keyframes crab-slide-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#pearl {
+  bottom: 0;
+  width: 6vw;
+  left: 43vw;
+}
