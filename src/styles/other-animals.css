@@ -2,7 +2,6 @@
   position: absolute;
   width: 7vw;
   left: 60vw;
-  z-index: -1;
   transform: translateY(50vw);
 
   animation-name: crayfish-slide-up;
@@ -41,7 +40,6 @@
 #crab-wrapper {
   position: absolute;
   bottom: 5vw;
-  z-index: -1;
   transform: translateX(100vw);
 
   animation-name: crab-slide-to-left;

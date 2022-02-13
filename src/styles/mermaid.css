@@ -34,6 +34,8 @@
 
 #baby {
   width: 5.5vw;
+  animation: mermaid-bounce-left-to-right 1.5s 14s linear forwards,
+  mermaid-bounce-left-to-right 0.5s 16s linear infinite
 }
 
 @keyframes mermaid-bounce-left-to-right {
@@ -42,6 +44,19 @@
   }
   50% {
     transform: translateX(-20px);
+    
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes baby-bounce-left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-40px);
     
   }
   100% {

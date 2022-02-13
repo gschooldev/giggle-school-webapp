@@ -1,0 +1,41 @@
+header {
+  display: grid;
+  /* grid-template-columns: 150px 1fr 150px; */
+  grid-template-columns: auto 1fr auto;
+  padding: 0px 20px 15px 20px;
+}
+
+.header-item {
+  color: #f26c4f;
+}
+
+.header-item-middle {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  grid-template-rows: 110px;
+  justify-content: center;
+  align-content: center;
+}
+
+#jeanette-rowe, #giggle-school, #dino, #pirate {
+  /* max-width: 150px; */
+  width: 10vw;
+  /* width: 10vw; */
+}
+
+#dino {
+  /* max-width: 10vw; */
+  /* margin-right: 30px;
+  margin-left: 30px; */
+}
+
+#header-text {
+  width: 30vw;
+}
+
+/* @media only screen and (max-width: 320px) {
+  header {
+    grid-template-columns: 150px 1fr 150px;
+  }
+} */

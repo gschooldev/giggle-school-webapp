@@ -116,7 +116,7 @@
   /* animation name | length of animation | delay | type of animation | repetition */
   animation: yellow-fish-slide-right 4s 2s linear forwards,
     yellow-fish-slide-bottom-right 6s 7s linear forwards,
-    yellow-fish-slide-right-and-then-bottom-right 15s 13s linear infinite;
+    yellow-fish-slide-right-and-then-bottom-right 15s 13s linear infinite;  
 }
 #yellow-fish {
   width: 8vw;
@@ -133,25 +133,31 @@
 
 @keyframes yellow-fish-slide-bottom-right {
   0% {
-    transform: translate(18vw, 3vw);
+    transform: translate(18vw, 3vw) rotate(0deg);
+  }
+  5% {
+    transform: translate(18vw, 3vw) rotate(40deg);
   }
   100% {
-    transform: translate(100vw, 50vw);
+    transform: translate(100vw, 50vw) rotate(40deg);
   }
 }
 
 @keyframes yellow-fish-slide-right-and-then-bottom-right {
   0% {
-    transform: translate(calc(-100% - 35vw), 5%);
+    transform: translate(calc(-100% - 35vw), 5%) rotate(0deg);
   }
   25% {
-    transform: translate(18vw, 3vw);
+    transform: translate(18vw, 3vw) rotate(0deg);
+  }
+  55% {
+    transform: translate(18vw, 3vw) rotate(0deg);
   }
   60% {
-    transform: translate(18vw, 3vw);
+    transform: translate(18vw, 3vw) rotate(40deg);
   }
   100% {
-    transform: translate(100vw, 50vw);
+    transform: translate(100vw, 50vw) rotate(40deg);
   } 
 }
 

@@ -1,0 +1,101 @@
+.rocking {
+  animation: rocking 0.5s linear alternate 2;
+}
+
+.rotating {
+  animation: rotating 0.5s linear alternate 2;
+}
+
+.rotating-treasure-left {
+  animation: rotating-treasure-left 0.5s linear alternate 2;
+}
+
+.rotating-treasure-right {
+  animation: rotating-treasure-right 0.5s linear alternate 2;
+}
+
+.rotating-treasure-far-left {
+  animation: rotating-treasure-far-left 0.5s linear alternate 2;
+}
+
+@keyframes rocking {
+  0% {
+    transform: translateX(0vw);
+  }
+  50% {
+    transform: translateX(1vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(10deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+
+@keyframes rotating-treasure-left {
+  0% {
+    transform: rotate(-30deg)
+  }
+  50% {
+    transform: rotate(-40deg)
+  }
+  100% {
+    transform: rotate(-30deg)
+  }
+}
+
+@keyframes rotating-treasure-right {
+  0% {
+    transform: rotate(5deg)
+  }
+  50% {
+    transform: rotate(15deg)
+  }
+  100% {
+    transform: rotate(5deg)
+  }
+}
+
+@keyframes rotating-treasure-far-left {
+  0% {
+    transform: rotate(10deg)
+  }
+  50% {
+    transform: rotate(25deg)
+  }
+  100% {
+    transform: rotate(10deg)
+  }
+}
+
+
+.rockingHover {
+  animation: rocking-2 0.5s linear alternate 2;
+}
+
+/* .interactive {
+  z-index: 10000;
+} */
+.interactive:hover {
+  cursor: pointer;
+}
+
+.interactive-bg-element {
+  position: absolute;
+}
+
+.treasure-chests {
+  /* z-index: -1; */
+  pointer-events: all;
+}
