@@ -1,5 +1,8 @@
 // animation
 const MAX_ANIM_TIME = 3;
+// this is here because javascript file gets downloaded AFTER the css, so our delay in the css styling in the javascript file is LATER than expected
+const JS_ANIM_DELAY = 4;
+
 
 window.addEventListener("load", (event) => {
   // playSound();
@@ -16,7 +19,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "5vw",
     left: "25vw",
-    delay: 6,
+    delay: 10 - JS_ANIM_DELAY,
     zIndex: -3,
     maxDuration: 4,
     minBubbles: 15
@@ -26,7 +29,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "17vw",
     left: "80vw",
-    delay: 8,
+    delay: 12 - JS_ANIM_DELAY,
     zIndex: -3,
     maxDuration: 4,
   });
@@ -34,7 +37,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "17vw",
     left: "85vw",
-    delay: 9,
+    delay: 13 - JS_ANIM_DELAY,
     zIndex: -3,
     maxDuration: 4,
   });
@@ -43,7 +46,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "15vw",
     left: "78vw",
-    delay: 8,
+    delay: 13 - JS_ANIM_DELAY,
     zIndex: 0,
     maxDuration: 2,
     minBubbles: 3,
@@ -52,7 +55,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "15vw",
     left: "80vw",
-    delay: 8,
+    delay: 13 - JS_ANIM_DELAY,
     zIndex: 0,
     maxDuration: 2,
     minBubbles: 3,
@@ -61,7 +64,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "15vw",
     left: "92vw",
-    delay: 8,
+    delay: 13 - JS_ANIM_DELAY,
     zIndex: 0,
     maxDuration: 2,
     minBubbles: 3,
