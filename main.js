@@ -16,7 +16,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "5vw",
     left: "25vw",
-    delay: 10,
+    delay: 6,
     zIndex: -3,
     maxDuration: 4,
     minBubbles: 15
@@ -26,7 +26,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "17vw",
     left: "80vw",
-    delay: 12,
+    delay: 8,
     zIndex: -3,
     maxDuration: 4,
   });
@@ -34,7 +34,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "17vw",
     left: "85vw",
-    delay: 13,
+    delay: 9,
     zIndex: -3,
     maxDuration: 4,
   });
@@ -43,7 +43,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "15vw",
     left: "78vw",
-    delay: 12,
+    delay: 8,
     zIndex: 0,
     maxDuration: 2,
     minBubbles: 3,
@@ -52,7 +52,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "15vw",
     left: "80vw",
-    delay: 12,
+    delay: 8,
     zIndex: 0,
     maxDuration: 2,
     minBubbles: 3,
@@ -61,7 +61,7 @@ window.addEventListener("load", (event) => {
   bubblesAnims({
     bottom: "15vw",
     left: "92vw",
-    delay: 12,
+    delay: 8,
     zIndex: 0,
     maxDuration: 2,
     minBubbles: 3,
