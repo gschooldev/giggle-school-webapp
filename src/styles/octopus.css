@@ -1,0 +1,45 @@
+#octopus-wrapper {
+  position: absolute;
+  width: 20vw;
+  right: 5vw;
+  bottom: 14.5vw;
+  opacity: 0;
+
+  animation-name: octopus-slide-up;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 15.5s;
+}
+
+#octopus {
+  animation-name: octopus-bounce-left-to-right;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 15.5s;
+}
+
+@keyframes octopus-slide-up {
+  0% {
+    transform: translateY(15vw);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0vw);
+    opacity: 1;
+  }
+}
+
+@keyframes octopus-bounce-left-to-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
