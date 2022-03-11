@@ -5,7 +5,7 @@ const JS_ANIM_DELAY = 4;
 
 
 window.addEventListener("load", (event) => {
-  // playSound();
+  playSound();
 
   pirateAnim();
   dinoAnim();
